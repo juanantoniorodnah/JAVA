@@ -16,7 +16,7 @@ public class AdivinaElNumeroPlus {
 			// System.out.println(numeroAdivinar);
 
 			int intentos = 0;
-			int intentosMaximos = 3;
+			int intentosMaximos = 5;
 
 			boolean seguir = true;
 
@@ -29,17 +29,22 @@ public class AdivinaElNumeroPlus {
 				System.out.println("Intento numero " + intentos);
 
 				if (numero == numeroAdivinar) {
-					System.out.println("Enhorabuena, has acertado");
-
+					System.out.println("Enhorabuena, has acertado.");
+									
+				} else if (intentos >= intentosMaximos) {
+					System.out.println("Tu número de intentos ha sido superdado.");
+					
 					seguir = false;
-
+					
 				} else if (numeroAdivinar < numero) {
 					System.out.println("El número es menor");
 				} else {
 					System.out.println("El número es mayor");
 				}
 			}
-
+			
+			System.out.println("El numero que buscabas era " + numeroAdivinar + ".");
+			
 			System.out.println("¿Te gustaría jugar otra vez? Responde (s/N)");
 
 			sc.nextLine();

@@ -16,12 +16,12 @@ public class SeleccionDeJuego {
 			System.out.println("1. Adivina el numero");
 			System.out.println("2. Ahorcado");
 			System.out.println("3. Calculadora");
-			System.out.println("4. Juego 4");
+			System.out.println("4. Calculadora de porcentajes");
 			System.out.println("5. Juego 5");
 			System.out.println();
 			System.out.println("0. Salir");
 			System.out.println();
-			System.out.println("Dime que juego te apetecería jugar.");
+			System.out.println("Dime cúal de estas opciones vas a elegir.");
 			System.out.println();
 
 			int numero = scan.nextInt();
@@ -34,6 +34,9 @@ public class SeleccionDeJuego {
 
 			} else if (numero == 3) {
 				Hola.Calculadora.main(args);
+				
+			} else if (numero == 4) {
+				Hola.CalculadoraDePorcentajes.main(args);
 
 			} else if (numero == 0) {
 				System.out.println("Gracias por estar aqui");
@@ -42,7 +45,7 @@ public class SeleccionDeJuego {
 
 			} else {
 				System.out.println();
-				System.out.println("Aun no tenemos ese juego disponible, selecciona los números 1, 2 o 3");
+				System.out.println("Aun no tenemos ese juego disponible, selecciona los números 1, 2, 3 o 4");
 				System.out.println();
 			}
 		}

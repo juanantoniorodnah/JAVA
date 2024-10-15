@@ -21,16 +21,16 @@ public class Calculadora {
 			System.out.println();
 
 			num1 = scann.nextDouble();
+			
+			System.out.print("Introduce la operación (+, -, *, /): ");
+			System.out.println();
+
+			operacion = scann.next();
 
 			System.out.print("Introduce el segundo número: ");
 			System.out.println();
 
 			num2 = scann.nextDouble();
-
-			System.out.print("Introduce la operación (+, -, *, /): ");
-			System.out.println();
-
-			operacion = scann.next();
 
 			double resultado = 0;
 			boolean valido = true;
@@ -53,7 +53,7 @@ public class Calculadora {
 					resultado = num1 / num2;
 
 				} else {
-					System.out.println("Error: División por cero.");
+					System.out.println("No se puede dividir ente cero.");
 					System.out.println();
 					valido = false;
 				}
@@ -67,7 +67,7 @@ public class Calculadora {
 			}
 
 			if (valido) {
-				System.out.println("El resultado es: " + resultado);
+				System.out.println("El resultado es: " + resultado + ".");
 				System.out.println();
 			}
 			System.out.println("-------------------------------------------");
